@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+   color: #3E3F5B;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+   
+    width: 100%;
+    row-gap: 10px;
+}
+.grid-item{
+    justify-content: center;
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+}
+.header{
+    grid-column: 1/5;
+    background-color:pink;
+    color:aliceblue;
+}
+.sidebar{
+    grid-column: 1/2;
+    background-color:lightsalmon ;
+    color: aliceblue;
+}
+.content{
+    grid-column: 2/4;
+    background-color:yellowgreen;
+}
+.aside{
+    grid-column: 4/5;
+    background-color:violet ;
+    color: aliceblue;
+}
+.footer{
+    grid-column: 1/5;
+    background-color:orange;
+}
+   </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content">Content</div>
+        <div class="grid-item aside">Aside</div>
+        <div class="grid-item footer">Footer</div>
+    </div>
+</body>
+</html>
